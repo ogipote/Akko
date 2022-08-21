@@ -31,7 +31,7 @@ module.exports = {
             type: 'BUTTON',
             label: channelLanguage.get('premiumPatreonLabel'),
             style: 'SECONDARY',
-            emoji: '943405711243739176',
+            emoji: '981902531322077196',
             customId: 'useReward',
         };
         const components = [{
