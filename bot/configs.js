@@ -2,10 +2,10 @@ const {Permissions, Collection} = require('discord.js');
 
 module.exports = {
     maintenance: false,
-    errorlog: '667650244028268565',
-    guildlog: '854893736588214282',
-    bootlog: '854894584248664095',
-    defaultPrefix: 'y!',
+    errorlog: '945880722877612072',
+    guildlog: '945880722877612072',
+    bootlog: '945880722877612072',
+    defaultPrefix: '-',
     actions: new Collection([
         ['delmsg', {
             ignorableChannels: true,
@@ -22,8 +22,8 @@ module.exports = {
         ['memberjoin', {}],
         ['memberleave', {ignorableRoles: true}],
     ]),
-    support: 'eNcsvsy',
-    supportID: '476244157245947904',
+    support: 'HPBmxz6Bjj',
+    supportID: '681797849926860810',
     permissions: Permissions.ALL - (Permissions.FLAGS.START_EMBEDDED_ACTIVITIES + Permissions.FLAGS.VIEW_GUILD_INSIGHTS + Permissions.FLAGS.USE_APPLICATION_COMMANDS + Permissions.FLAGS.STREAM),
     xpRolesLimit: 10,
     namebansLimits: [5, 25],
