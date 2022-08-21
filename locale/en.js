@@ -7,7 +7,7 @@ module.exports = {
             case 'mentionHelp': return `Use \`${vars[0]}help\` to see all my commands!`;
             case 'blacklisted': return 'You are blacklisted from using me!';
             case 'noArgs': return `You didn't provide any arguments, ${vars[0]}!\nThe proper usage would be:\n${vars[3].map(e => `\`${vars[1]}${vars[2]} ${e}\``).join('\n')}`;
-            case 'cooldown': return `Please wait ${vars[0]} more second(s) before reusing the \`${vars[1]}\` command${vars[2] ? '' : `\nTip: Premium servers have half the cooldown for all commands\nTo get premium [join Patreon](<https://www.patreon.com/YottaBot>)`}`;
+            case 'cooldown': return `Please wait ${vars[0]} more second(s) before reusing the \`${vars[1]}\` command${vars[2] ? '' : `\nTip: Premium servers have half the cooldown for all commands\nTo get premium [join Patreon](<https://www.patreon.com/kaoricafe>)`}`;
             case 'error': return `There was an error trying to execute the command \`${vars[0]}\`\nThe issue was sent to the support team and will be fixed in the near future`;
             case 'helpDescription': return 'Lists all commands or gives info about a specific one';
             case 'helpUsage': return '[(command)]';
@@ -95,7 +95,7 @@ module.exports = {
             case 'xpStack': return `Role stacking successfully ${(vars[0] === 'on') ? 'enabled': 'disabled'}`
             case 'manageRole': return 'I need permissions to manage this role';
             case 'sameXp': return 'There is another role being rewarded at this amount of xp';
-            case 'maxXpRoles': return 'The maximum amount of xp roles for non premium servers is 10, but you can add more with premium! To get premium [join Patreon](<https://www.patreon.com/YottaBot>)';
+            case 'maxXpRoles': return 'The maximum amount of xp roles for non premium servers is 10, but you can add more with premium! To get premium [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'setXpRole': return `**${vars[0]}** is now achieveable at **${vars[1]}** xp\nbe aware that members will only get this role when they send new messages`;
             case 'resetXpRoles': return `All xp roles were removed\nbe aware that these roles won't be automatically removed from members, if you want this, it's recommended that you delete the roles from the server so no member can have it`;
             case 'removeXpRole': return `**${vars[0]}** was removed from the xp rewards\nbe aware that this role won't be automatically removed from members, if you want this, it's recommended that you delete the role from the server so no member can have it`;
@@ -125,7 +125,7 @@ module.exports = {
             case 'rolemenuUsage1': return 'edit (menu ID) <(role mention)/(role ID)/"(role name)"> (emoji) [(list of roles and emojis)] [toggle]';
             case 'maxRolesMenu': return 'The maximum amount of roles per menu is 20';
             case 'botReactions': return 'I need permission to add reactions in this channel';
-            case 'maxRolemenus': return 'The maximum amount of menus for non premium servers is 10, but you can add more with premium! To get premium [join Patreon](<https://www.patreon.com/YottaBot>)';
+            case 'maxRolemenus': return 'The maximum amount of menus for non premium servers is 10, but you can add more with premium! To get premium [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'uniqueEmoji': return 'Each emoji can only be used once per menu';
             case 'loading': return 'Loading...';
             case 'rolemenuEmbedAuthor': return 'React to claim a role';
@@ -158,7 +158,7 @@ module.exports = {
                                             `Welcome channel: ${vars[8] ? `<#${vars[8]}>` : '`none`'}\n` +
                                             `Beta features: \`${vars[7] ? 'on' : 'off'}\``;
             case 'betaCommand': return 'This command is currently only available for servers that enabled open beta features in the bot settings';
-            case 'premiumCommand': return `This command is a premium feature, to get premium [join Patreon](<https://www.patreon.com/YottaBot>)`;
+            case 'premiumCommand': return `This command is a premium feature, to get premium [join Patreon](<https://www.patreon.com/kaoricafe>)`;
             case 'botWebhooks': return 'I need permission to manage webhooks in this channel';
             case 'executor': return `\nExecutor: ${vars[0]}`;
             case 'delmsgEmbedAuthor': return 'Deleted message';
@@ -381,7 +381,7 @@ module.exports = {
                                           `${vars[2] ? `${vars[2]} users could not be banned\n` : ''}` +
                                           `${vars[3] ? `${vars[3]} users were already banned\n` : ''}` +
                                           `${vars[4] ? '' : '\nNote that non premium servers have a massban limit of **300** users\n' +
-                                                            'To upgrade this to **1000** you can get premium by [joining Patreon](<https://www.patreon.com/YottaBot>)'}`;
+                                                            'To upgrade this to **1000** you can get premium by [joining Patreon](<https://www.patreon.com/kaoricafe>)'}`;
             case 'firstBoost': return `Congratulations ${vars[0]}, you boosted **${vars[1]}** and was rewarded with a premium key, use the \`/premium activate\` commannd in any server to activate its premium features`;
             case 'renewBoost': return `Thank you for boosting **${vars[0]}** for another month! You got a premium key as a reward, use the \`/premium activate\` commannd in any server to activate its premium features`;
             case 'recommendMinLevels': return 'You can\'t ask for recommendations for less than 2 levels';
@@ -437,12 +437,12 @@ module.exports = {
             case 'language': return 'Server language';
             case 'premiumKeysLabel': return 'Use key';
             case 'premiumPatreonLabel': return 'Use Patreon reward';
-            case 'pledgeNotFound': return 'Your patreon membership was not found\nIf you think this is a mistake make sure your Discord account is connected to your patreon account\n[This article](https://support.patreon.com/hc/en-us/articles/212052266) will guide you through doing so\nIf you are not yet a YottaBot patron [join Patreon](<https://www.patreon.com/YottaBot>)';
+            case 'pledgeNotFound': return 'Your patreon membership was not found\nIf you think this is a mistake make sure your Discord account is connected to your patreon account\n[This article](https://support.patreon.com/hc/en-us/articles/212052266) will guide you through doing so\nIf you are not yet a YottaBot patron [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'noRewardsRemaining': return 'You have already used all your Patreon rewards, wait until one of the premiums you claimed expires to use it on this server';
             case 'patreonRewardClaimed': return 'You successfully activated premium features in this server using your Patreon rewards\nDo you wish for this to be automatically renewed monthly?';
             case 'enableRenew': return 'Renew monthly';
             case 'renewEnabled': return 'The premium features for this server will be automatically renewed';
-            case 'notPatron': return 'You are not currently using Patreon rewards in any server\nIf you are not yet a YottaBot patron [join Patreon](<https://www.patreon.com/YottaBot>)';
+            case 'notPatron': return 'You are not currently using Patreon rewards in any server\nIf you are not yet a YottaBot patron [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'unknownGuild': return 'Unknown server';
             case 'premiumInfoFieldValue': return `**Expires:** <t:${vars[0]}>\n**Monthly renew:** ${vars[1] ? '`on`' : '`off`'}`;
             case 'invGuild': return 'Invalid server';
@@ -461,8 +461,8 @@ module.exports = {
             case 'stickerAdded': return 'Sticker successfully added';
             case 'maxStickersReached': return 'Maximum number of stickers reached';
             case 'componentError': return 'There was an error!\nThe issue was sent to the support team and will be fixed in the near future';
-            case 'disabledPremiumXpRoles': return 'Since the number of xp roles exceeded the limit for non premium servers, the highest roles over this limit were temporarily disabled\nYou can make these roles achievable again with premium, to get premium [join Patreon](<https://www.patreon.com/YottaBot>)';
-            case 'disabledPremiumXpRolesNoHL': return 'Since the number of xp roles exceeded the limit for non premium servers, the highest roles over this limit were temporarily disabled\nYou can make these roles achievable again with premium, to get premium join Patreon: <https://patreon.com/YottaBot>';
+            case 'disabledPremiumXpRoles': return 'Since the number of xp roles exceeded the limit for non premium servers, the highest roles over this limit were temporarily disabled\nYou can make these roles achievable again with premium, to get premium [join Patreon](<https://www.patreon.com/kaoricafe>)';
+            case 'disabledPremiumXpRolesNoHL': return 'Since the number of xp roles exceeded the limit for non premium servers, the highest roles over this limit were temporarily disabled\nYou can make these roles achievable again with premium, to get premium join Patreon: <https://patreon.com/kaoricafe>';
             case 'getstickerDescription': return 'Replies with the file for the first sticker in the target message\nIf you have permission to add stickers it will also show a button to upload the file as a sticker in the current server\n(Only as message context menu)';
             case 'memberjoinActionName': return 'Joined members';
             case 'memberjoinEmbedAuthor': return `${vars[0]} joined the server`;
@@ -518,20 +518,20 @@ module.exports = {
             case 'editionsinfoEmbedDescription': return `Enabled: \`${vars[0] ? 'on' : 'off'}\`\n` +
                                                         `Editions stored: \`${vars[1]}${vars[2] ? '' : '/100'}\``;
             case 'nonPremiumStorage': return 'Non premium servers have a limit of only 100 stored editions\n' +
-                                             'To get premium and unlock unlimited storage along with many other amazing features [join Patreon](<https://www.patreon.com/YottaBot>)';
+                                             'To get premium and unlock unlimited storage along with many other amazing features [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'wipeEditionsConfirm': return 'Are you sure you want to delete all stored editions of messages from this server?\n' +
                                                'This action cannot be undone';
             case 'wipeEditionsSuccess': return 'Editions storage was succesffully wiped out';
             case 'noEditsFound': return 'There are no stored previous versions of this message';
             case 'premiumAd0': return 'YottaBot needs your support to keep being fast and reliable while still offering so many free features for everyone\n' +
                                       'Did you know premium servers can **award their members with xp for time spent talking in voice channels**?\n' +
-                                      'To unlock this along with [many other amazing features](<https://github.com/HordLawk/YottaBot/wiki/Premium>) ~~and stop getting these ads~~ [join Patreon](<https://www.patreon.com/YottaBot>)';
+                                      'To unlock this along with [many other amazing features](<https://github.com/HordLawk/YottaBot/wiki/Premium>) ~~and stop getting these ads~~ [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'premiumAd1': return 'YottaBot needs your support to keep being fast and reliable while still offering so many free features for everyone\n' +
                                       'Did you know premium servers can **add unlimited roles for members to achieve by earning xp**?\n' +
-                                      'To unlock this along with [many other amazing features](<https://github.com/HordLawk/YottaBot/wiki/Premium>) ~~and stop getting these ads~~ [join Patreon](<https://www.patreon.com/YottaBot>)';
+                                      'To unlock this along with [many other amazing features](<https://github.com/HordLawk/YottaBot/wiki/Premium>) ~~and stop getting these ads~~ [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'premiumAd2': return 'YottaBot needs your support to keep being fast and reliable while still offering so many free features for everyone\n' +
                                       'Did you know premium servers can **store lists of previous versions of edited messages**?\n' +
-                                      'To unlock this along with [many other amazing features](<https://github.com/HordLawk/YottaBot/wiki/Premium>) ~~and stop getting these ads~~ [join Patreon](<https://www.patreon.com/YottaBot>)';
+                                      'To unlock this along with [many other amazing features](<https://github.com/HordLawk/YottaBot/wiki/Premium>) ~~and stop getting these ads~~ [join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'selectCategory': return 'Select a category';
             case 'helpHome': return 'Home';
             case 'selectCommand': return 'Select a command';
@@ -566,7 +566,7 @@ module.exports = {
             case 'usernameTooLong': return 'The banned piece of text must be shorter than 33 characters in length';
             case 'tooManyNamebans': return `You have reached the limit of ${vars[0]} banned usernames for this server\n` +
                                            `If you wish to upgrade this limit to ${vars[1]} ` +
-                                           '[join Patreon](<https://www.patreon.com/YottaBot>)';
+                                           '[join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'tooManyNamebansPremium': return `You have reached the limit of ${vars[1]} banned usernames for this ` +
                                                   'server';
             case 'namebanAddSuccess': return `\`${vars[0]}\` was successfully added to the list of banned usernames`;
@@ -577,7 +577,7 @@ module.exports = {
                                                  'premium servers, the latest added usernames over this limite were ' +
                                                  'temporarily disabled\n' +
                                                  'You can make these usernames banned again with premium, to get premium ' +
-                                                 '[join Patreon](<https://www.patreon.com/YottaBot>)';
+                                                 '[join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'namebans_listEmbedAuthor': return 'Currently banned usernames';
             case 'namebans_listEmbedDescription': return `Text: \`${vars[0]}\`\n` +
                                                          `Partial: \`${vars[1] ? 'yes' : 'no'}\`\n` +
@@ -594,7 +594,7 @@ module.exports = {
             case 'tooManyAutoUnarchives': return `You have reached the limit of ${vars[0]} automatically unarchied ` +
                                                  'threads for this server\n' +
                                                  `If you wish to upgrade this limit to ${vars[1]} ` +
-                                                 '[join Patreon](<https://www.patreon.com/YottaBot>)';
+                                                 '[join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'tooManyAutoUnarchivesPremium': return `You have reached the limit of ${vars[0]} automatically ` +
                                                         'unarchived threads for this server';
             case 'disabledExtraNotArchiveds': return 'Since the number of automatically unarchived threads exceeded ' +
@@ -602,7 +602,7 @@ module.exports = {
                                                      'over this limite were temporarily disabled\n' +
                                                      'You can make these threads automatically unarchived again with ' +
                                                      'premium, to get premium ' +
-                                                     '[join Patreon](<https://www.patreon.com/YottaBot>)';
+                                                     '[join Patreon](<https://www.patreon.com/kaoricafe>)';
             case 'welcomeMessage': return `[**${vars[0]}**](<https://discord.com/users/${vars[1]}>) just joined!\n` +
                                           `Please welcome them to the server`;
             case 'newWelcomeHookReason': return 'Created to welcome new members';
