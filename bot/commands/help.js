@@ -203,7 +203,7 @@ module.exports = {
                 permissions: configs.permissions,
             });
             embed = new MessageEmbed()
-                .setColor(interaction.guild ? (interaction.guild.me.displayColor || 0x8000ff) : 0x8000ff)
+                .setColor("#303136")
                 .setAuthor({
                     name: channelLanguage.get('helpEmbedTitle'),
                     iconURL: interaction.client.user.avatarURL({

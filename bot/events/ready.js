@@ -67,7 +67,7 @@ module.exports = {
                 if(discordChannel && discordChannel.viewable && discordChannel.permissionsFor(guild.me).has(Permissions.FLAGS.SEND_MESSAGES) && discordChannel.permissionsFor(guild.me).has(Permissions.FLAGS.EMBED_LINKS)){
                     let guildLanguage = locale.get(client.guildData.get(guild.id).language);
                     let embed = new MessageEmbed()
-                        .setColor(0x0000ff)
+                        .setColor("#303136")
                         .setAuthor({
                             name: discordUser ? guildLanguage.get('autoUnmuteEmbedAuthorMember', [discordUser.tag]) : guildLanguage.get('autoUnmuteEmbedAuthorNoMember'),
                             iconURL: discordUser?.displayAvatarURL({dynamic: true}),
