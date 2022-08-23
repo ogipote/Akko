@@ -12,7 +12,7 @@ module.exports = {
     args: true,
     perm: Permissions.FLAGS.ADMINISTRATOR,
     guildOnly: true,
-    premium: true,
+    premium: false,
     execute: async function(message, args){
         const {channelLanguage} = message;
         const channel = require('../../schemas/channel.js');
